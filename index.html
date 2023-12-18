@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="logo">
+  </header>
+  <form action="https://httpbin.org/post" method="post">
+    <fieldset>
+        <label for="first-name">
+         <span class="label"> First Name</span> <br> <input type="text" id="first-name" name="first_name" placeholder="first name">
+        </label>
+        <label for="last-name">
+          <span class="label">Last Name</span> <br> <input type="text" id="last-name" name="last_name" placeholder="last name">
+        </label>
+    </fieldset>
+    <fieldset>
+        <label for="useremail">
+          <span class="label">Email</span> <br> <input type="email" id="useremail" name="user_email" placeholder="example@gmail.com">
+        </label>
+        <label for="phone">
+          <span class="label">Phone Number</span> <br> <input type="number" name="user_number" id="phone" placeholder="phone number">
+        </label>
+    </fieldset>
+    <fieldset>
+        <label for="userpassword">
+          <span class="label">Password</span> <br> <input type="password" id="userpassword" name="user_pass">
+        </label>
+        <label for="confirmpassword">
+          <span class="label">Confirm Password</span><br> <input type="password" id="confirmpassword" name="confirm_pass">
+        </label>
+    </fieldset>
+  </form>
+</body>
+</html>
