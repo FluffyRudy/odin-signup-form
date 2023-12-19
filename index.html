@@ -10,31 +10,33 @@
   <header>
     <img src="assets/logo.png" alt="logo">
   </header>
+  <h1>SignUp Form</h1>
   <form action="https://httpbin.org/post" method="post">
     <fieldset>
         <label for="first-name">
-         <span class="label"> First Name</span> <br> <input type="text" id="first-name" name="first_name" placeholder="first name">
+         <span class="label"> First Name</span> <br> <input type="text" id="first-name" name="first_name" placeholder="first name" pattern="^.{4,}" required>
         </label>
         <label for="last-name">
-          <span class="label">Last Name</span> <br> <input type="text" id="last-name" name="last_name" placeholder="last name">
+          <span class="label">Last Name</span> <br> <input type="text" id="last-name" name="last_name" placeholder="last name" pattern="^.{4,}" required>
         </label>
     </fieldset>
     <fieldset>
         <label for="useremail">
-          <span class="label">Email</span> <br> <input type="email" id="useremail" name="user_email" placeholder="example@gmail.com">
+          <span class="label">Email</span> <br> <input type="email" id="useremail" name="user_email" autocomplete="username" placeholder="example@gmail.com" required>
         </label>
         <label for="phone">
-          <span class="label">Phone Number</span> <br> <input type="number" name="user_number" id="phone" placeholder="phone number">
+          <span class="label">Phone Number</span> <br> <input type="number" name="user_number" id="phone" placeholder="phone number" required>
         </label>
     </fieldset>
     <fieldset>
         <label for="userpassword">
-          <span class="label">Password</span> <br> <input type="password" id="userpassword" name="user_pass">
+          <span class="label">Password</span> <br> <input type="password" id="userpassword" name="user_pass" autocomplete="new-password" placeholder="password" pattern="^.{8,}" required>
         </label>
         <label for="confirmpassword">
-          <span class="label">Confirm Password</span><br> <input type="password" id="confirmpassword" name="confirm_pass">
+          <span class="label">Confirm Password</span><br> <input type="password" id="confirmpassword" name="confirm_pass" autocomplete="new-password" placeholder="confirm password" pattern="^.{4,}" required>
         </label>
     </fieldset>
+    <button type="submit">Create Account</button>
   </form>
 </body>
 </html>
