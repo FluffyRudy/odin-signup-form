@@ -34,7 +34,7 @@ form {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 form:hover {
@@ -64,13 +64,6 @@ font-family: 'Courier New', Courier, monospace;
     text-align: center;
     background-color: darkcyan;
     padding: 5px;
-    position: absolute;
-}
-
-label:hover .label {
-    visibility: visible;
-    left: 1vmax;
-    border-radius: 3px;
 }
 
 input {
@@ -128,7 +121,12 @@ input::placeholder {
 }
 
 input:invalid {
-    border-bottom: 3px solid red;
+    border: none;
+    border-bottom: 3px solid darkgrey;
+}
+
+input:focus:invalid {
+    border: 3px solid red;
 }
 
 input:valid {
