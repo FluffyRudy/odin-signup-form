@@ -14,10 +14,10 @@
   <form action="https://httpbin.org/post" method="post">
     <fieldset>
         <label for="first-name">
-         <span class="label"> First Name</span> <br> <input type="text" id="first-name" name="first_name" placeholder="first name" pattern="^.{4,}" required>
+         <span class="label"> First Name</span> <br> <input type="text" id="first-name" name="first_name" pattern="^[a-zA-Z]{4,}(_?[a-zA-Z]*\d*)?$" placeholder="first name" required>
         </label>
         <label for="last-name">
-          <span class="label">Last Name</span> <br> <input type="text" id="last-name" name="last_name" placeholder="last name" pattern="^.{4,}" required>
+          <span class="label">Last Name</span> <br> <input type="text" id="last-name" name="last_name" pattern="^[a-zA-Z]{4,}(_?[a-zA-Z]*\d*)?$" placeholder="last name" required>
         </label>
     </fieldset>
     <fieldset>
@@ -30,10 +30,10 @@
     </fieldset>
     <fieldset>
         <label for="userpassword">
-          <span class="label">Password</span> <br> <input type="password" id="userpassword" name="user_pass" autocomplete="new-password" placeholder="password" pattern="^.{8,}" required>
+          <span class="label">Password</span> <br> <input type="password" id="userpassword" name="user_pass" autocomplete="new-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" placeholder="password" required>
         </label>
         <label for="confirmpassword">
-          <span class="label">Confirm Password</span><br> <input type="password" id="confirmpassword" name="confirm_pass" autocomplete="new-password" placeholder="confirm password" pattern="^.{4,}" required>
+          <span class="label">Confirm Password</span><br> <input type="password" id="confirmpassword" name="confirm_pass" autocomplete="new-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" placeholder="confirm password" required>
         </label>
     </fieldset>
     <button type="submit">Create Account</button>
